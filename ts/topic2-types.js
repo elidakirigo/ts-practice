@@ -17,7 +17,7 @@ var myAge = 25;
  */
 function myID(myName) {
     var result = 'i am ' + myName;
-    return result;
+    return typeof (result) == "string" ? true : false;
 }
 console.log(myID(myName));
 /**
@@ -54,6 +54,13 @@ var noOfBall = {
     netBall: 7,
     tennisBall: 45
 };
+/**
+ * ------------------------
+ * any type
+ * ------------------------
+ */
+var amount = 'anything can be typed on this data type';
+var typesOfSugar = ['sour', 111, true];
 /**
  * --------------
  * THE END

@@ -17,9 +17,9 @@ let myAge: number = 25;
  * function types example i.e on parameters and return types
  * ----------------------------------------------------------
  */
-function myID(myName: string): string {
+function myID(myName: string): boolean {
     let result: string = 'i am ' + myName;
-    return result;
+    return typeof (result) == "string" ? true : false;
 }
 console.log(myID(myName));
 
@@ -34,10 +34,10 @@ let OurNames: string[] = ['crisi', 'james', 'felicity'];
 
 //  array of objects
 let itemOfNames: Array<object> = [{
-        1: 'crisi',
-        2: 'james',
-        3: 'felicity'
-    }];
+    1: 'crisi',
+    2: 'james',
+    3: 'felicity'
+}];
 // array of array
 let collectionOfNames: Array<Array<string>> = [
     ['crisi', 'james', 'felicity'], ['kris', 'yelt']
@@ -48,18 +48,26 @@ let collectionOfNames: Array<Array<string>> = [
  *ojects
  * ---------------------------------
  */
-let noOfBalls : Object = {
-    football : 2,
-    netBall :7,
-    tennisBall : 45
+let noOfBalls: Object = {
+    football: 2,
+    netBall: 7,
+    tennisBall: 45
 }
 
 // or 
-let noOfBall : {} = {
-    football : 2,
-    netBall :7,
-    tennisBall : 45
+let noOfBall: {} = {
+    football: 2,
+    netBall: 7,
+    tennisBall: 45
 }
+/**
+ * ------------------------
+ * any type
+ * ------------------------
+ */
+
+let amount: any = 'anything can be typed on this data type';
+let typesOfSugar: any[] = ['sour', 111, true];
 /**
  * --------------
  * THE END
