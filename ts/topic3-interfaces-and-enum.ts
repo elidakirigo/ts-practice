@@ -19,19 +19,6 @@ let myDetails: Starks = {
     initials: "3459 to infinity and beyond"
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 enum Design { pretty, cute, plain, classy }
 
 let myChoice: Design = Design.classy
