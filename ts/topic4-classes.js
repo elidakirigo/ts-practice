@@ -37,4 +37,3 @@ var myZOO = {
         3: new MyKingdom('magenta', 'wanjiku').wildBeast('morroco')
     }
 };
-console.log(myZOO);

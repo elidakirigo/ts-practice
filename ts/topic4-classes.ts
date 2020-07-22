@@ -5,22 +5,15 @@
  */
 
 //  with javascript the classes will be compiled to ES5 not ES6
-<<<<<<< HEAD
 class MyKingdom {
+
+
     constructor(public color: string, public name: string, private Alive?: boolean, public type?: number) {
-=======
-class AnimalKingdom {
-
-
-    constructor(public color: string, public name: string, private Alive: boolean,public type : number) {
->>>>>>> 6b9378423e511d43c9ed02854468cacc8591e29f
         this.color = color;
         this.name = name;
         this.Alive = Alive;
         this.type = type;
     }
-
-<<<<<<< HEAD
     public fashionSense() {
         return `i am ${this.name} with a fashion sense of ${this.color} type design ,welcome to my blog!`
     }
@@ -43,17 +36,3 @@ let myZOO: Object = {
         3: new MyKingdom('magenta', 'wanjiku').wildBeast('morroco')
     }
 }
-console.log(myZOO);
-=======
-    dogs(type) {
-
-    }
-    cats(type) {
-
-    }
-
-    wildBeast(type) {
-
-    }
-}
->>>>>>> 6b9378423e511d43c9ed02854468cacc8591e29f
