@@ -17,7 +17,11 @@
  * using typescript compiler on node using npm
  * run 'tsc [typescript file name]' to compile your .ts to .js
  * 
+ * watching = tsc -w [file name] or tsc --watch [file name]
  * 
+ * creating config files : tsc --init
+ * 
+ * ceating a typescript file : touch [file name.ts] note : without the extention it does not have any
  * ----------------------
  * the END
  * ----------------------

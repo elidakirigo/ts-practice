@@ -3,7 +3,7 @@
  * string types examples note :ES6 can be used in typescript
  * ----------------------------------------------------------
  */
-let myName: string = "elida";
+let myName: string | number | boolean = "elida";
 
 /**
  * ----------------------
@@ -31,9 +31,18 @@ console.log(myID(myName));
 let GroupNames: Array<string> = ['crisi', 'james', 'felicity'];
 /*or */
 let OurNames: string[] = ['crisi', 'james', 'felicity'];
+/**
+ * ----------------------------
+ * TUPPLES in typescript
+ * ----------------------------
+ */
+
+let ages: [string, boolean, number, string] = ['56', false, 8, 'carrier'];
+// or
+let agesAgain: (string | boolean | number | string)[] = ['56', false, 8, 'carrier'];
 
 //  array of objects
-let itemOfNames: Array<object> = [{
+let itemOfNames: Array<object | boolean> = [{
     1: 'crisi',
     2: 'james',
     3: 'felicity'
@@ -48,14 +57,14 @@ let collectionOfNames: Array<Array<string>> = [
  *ojects
  * ---------------------------------
  */
-let noOfBalls: Object = {
+let noOfBalls: object = {
     football: 2,
     netBall: 7,
     tennisBall: 45
 }
 
 // or 
-let noOfBall: {} = {
+let noOfBall: { football: number, netBall: number, tennisBall: number } = {
     football: 2,
     netBall: 7,
     tennisBall: 45

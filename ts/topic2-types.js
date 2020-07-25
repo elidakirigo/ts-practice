@@ -28,6 +28,14 @@ console.log(myID(myName));
 var GroupNames = ['crisi', 'james', 'felicity'];
 /*or */
 var OurNames = ['crisi', 'james', 'felicity'];
+/**
+ * ----------------------------
+ * TUPPLES in typescript
+ * ----------------------------
+ */
+var ages = ['56', false, 8, 'carrier'];
+// or
+var agesAgain = ['56', false, 8, 'carrier'];
 //  array of objects
 var itemOfNames = [{
         1: 'crisi',

@@ -5,11 +5,7 @@
  */
 //  with javascript the classes will be compiled to ES5 not ES6
 var MyKingdom = /** @class */ (function () {
-    function MyKingdom(color, name, Alive, type) {
-        this.color = color;
-        this.name = name;
-        this.Alive = Alive;
-        this.type = type;
+    function MyKingdom() {
         this.color = color;
         this.name = name;
         this.Alive = Alive;
@@ -29,11 +25,12 @@ var MyKingdom = /** @class */ (function () {
     };
     return MyKingdom;
 }());
+var zoo = new MyKingdom();
 var myZOO = {
-    personal_life: new MyKingdom('magenta', 'wanjiku').fashionSense(),
+    personal_life: zoo.fashionSense(),
     favourite_animals: {
-        1: new MyKingdom('magenta', 'wanjiku').cats('satey', 'tedious'),
-        2: new MyKingdom('magenta', 'wanjiku').dogs('jimmy', 'meat', 32),
-        3: new MyKingdom('magenta', 'wanjiku').wildBeast('morroco')
+        1: zoo.cats('satey', 'tedious'),
+        2: zoo.dogs('jimmy', 'meat', 32),
+        3: zoo.wildBeast('morroco')
     }
 };

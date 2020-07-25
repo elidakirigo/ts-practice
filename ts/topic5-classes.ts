@@ -6,9 +6,12 @@
 
 //  with javascript the classes will be compiled to ES5 not ES6
 class MyKingdom {
+    color: string; 
+    name: string; 
+    Alive?: boolean; 
+    type?: number
 
-
-    constructor(public color: string, public name: string, private Alive?: boolean, public type?: number) {
+    constructor() {
         this.color = color;
         this.name = name;
         this.Alive = Alive;
@@ -28,11 +31,13 @@ class MyKingdom {
         return `the first ever wild beast i saw was in ${country}`
     }
 }
+const zoo = new MyKingdom();
 let myZOO: Object = {
-    personal_life: new MyKingdom('magenta', 'wanjiku').fashionSense(),
+    personal_life: zoo.fashionSense(),
     favourite_animals: {
-        1: new MyKingdom('magenta', 'wanjiku').cats('satey', 'tedious'),
-        2: new MyKingdom('magenta', 'wanjiku').dogs('jimmy', 'meat', 32),
-        3: new MyKingdom('magenta', 'wanjiku').wildBeast('morroco')
+        1: zoo.cats('satey', 'tedious'),
+        2: zoo.dogs('jimmy', 'meat', 32),
+        3: zoo.wildBeast('morroco')
     }
 }
+
