@@ -8,8 +8,6 @@ class AutoStart implements Starks {
     initials(description: string): void;
 
     constructor(){
-        this.name = mycode;
-        this.age = myAge;
         this.figure = false;
     }
     initials(figure : boolean) :void{
