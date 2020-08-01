@@ -85,3 +85,87 @@ foo.foo = 'new castors'
 console.log(foo);
 delete foo.bar;
 console.log(foo);
+
+const obj = {
+    "some property": "some value"
+};
+const {
+    "some property": someProperty
+} = obj;
+
+var {
+    w,
+    x,
+    ...remaining
+} = {
+    w: 1,
+    x: 2,
+    y: 3,
+    z: 4
+};
+console.log(w, x, remaining);
+console.log(remaining.y);
+
+setInterval(() => {
+    console.log(new Date());
+}, 30000);
+
+/**
+ * -------------------
+ * SWAPPING VARIABLES
+ * -------------------
+ */
+
+var x, y;
+x = 3, y = 45;
+console.log(x, y);
+[x, y] = [y, x]
+console.log(x, y);
+
+// array destructuring
+var [x, y, ...remaining] = [1, 2, 3, 4];
+console.log(x, y, remaining);
+
+/**
+ * -------------------
+ * CHECK OUT 
+ * -------------------
+ */
+console.log.apply;
+
+function usingApply(x, y, z) {
+    console.log(x, y, z);
+}
+let args = [2, 24, 34];
+usingApply.apply(null, args);
+
+// or
+function onotherUseOfApply(args, params, ...others) {
+    console.log(args, params, ...others);
+}
+let newParams = [34, 65, 74, 34, 21, 22, 65];
+onotherUseOfApply(...newParams);
+
+let list = [1, 2]
+list = [...list, 3, 4];
+
+list.push(5, 6, 7)
+console.log(list);
+/**
+ * -----------------------
+ * using FOR IN, FOR OF, 
+ * -----------------------
+ */
+
+var someArray = [365, 458, 354];
+var myNames = 'i am named elida wanjiku kirigo';
+
+for (item in someArray) {
+    console.log(item);
+}
+for (item of someArray) {
+    console.log(item + ' second');
+} //used in TS
+for (char of myNames) {
+    console.log(char);
+}

@@ -21,6 +21,8 @@
  * 
  * creating config files : tsc --init
  * 
+ * checking for a config file location : tsc -p
+ * 
  * ceating a typescript file : touch [file name.ts] note : without the extention it does not have any
  * ----------------------
  * the END
