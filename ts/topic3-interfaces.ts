@@ -3,7 +3,7 @@
  * interfaces MUST start with capital since they rule out like javascript classes
  * -------------------------------------------------------------------------------
  */
-
+import { AutoStart } from "./topic9-implements";
 export interface Starks {
     name: string;
     age: number;
@@ -21,3 +21,4 @@ let myDetails: Starks = {
     }
 }
 
+let reverse = new AutoStart();

@@ -1,11 +1,13 @@
-import { Starks } from "./topic3-interfaces";
+// import { Starks } from "./topic3-interfaces";
 
-class AutoStart implements Starks {
-    name: string;
-    age: number;
+export class AutoStart
+//  implements Starks 
+ {
+    // name: string;
+    // age: number;
     figure: boolean;
     contactDetails?: number; //the question mark entails its not a must for it to be filled.
-    initials(description: string): void;
+    // initials(description: string): void;
 
     constructor(){
         this.figure = false;
@@ -15,5 +17,4 @@ class AutoStart implements Starks {
     }
 }
 
-let reverse = new AutoStart();
-reverse.initials('9');
+// reverse.initials('9');

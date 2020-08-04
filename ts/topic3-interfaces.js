@@ -1,10 +1,11 @@
 "use strict";
+exports.__esModule = true;
 /**
  * -------------------------------------------------------------------------------
  * interfaces MUST start with capital since they rule out like javascript classes
  * -------------------------------------------------------------------------------
  */
-exports.__esModule = true;
+var topic9_implements_1 = require("./topic9-implements");
 var myDetails = {
     name: 'elida wanjiku',
     age: 25,
@@ -13,3 +14,4 @@ var myDetails = {
         alert(described);
     }
 };
+var reverse = new topic9_implements_1.AutoStart();
