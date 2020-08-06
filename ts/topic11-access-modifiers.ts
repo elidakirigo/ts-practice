@@ -4,3 +4,5 @@
  * ------------------------
  * public,private, protected
  */
+
+ let x : number;
