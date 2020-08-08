@@ -17,7 +17,7 @@ let myAge: number = 25;
  * function types example i.e on parameters and return types
  * ----------------------------------------------------------
  */
-function myID(myName: string): boolean {
+function myID(myName: string | number): boolean {
     let result: string = 'i am ' + myName;
     return typeof (result) == "string" ? true : false;
 }
