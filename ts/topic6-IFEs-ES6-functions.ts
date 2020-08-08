@@ -14,7 +14,7 @@ const myLine: number = 2;
 (function () {
     let IIFE: string = `
     - i am an IIFE,
-    - i do not have paramaters,
+    - i do not have paramaters, most of he times
     - neither do i get called with other functions`
 
     console.log(IIFE);
