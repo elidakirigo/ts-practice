@@ -12,7 +12,7 @@ myNames = {
     second: 'wanjiku'
 }
 
-languages = ['kiswahili','english']
+languages = ['kiswahili','english'];
 /**
  * ----------------------
  * number types examples
