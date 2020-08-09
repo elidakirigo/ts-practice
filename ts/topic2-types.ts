@@ -11,6 +11,8 @@ myNames = {
     first: 'elida',
     second: 'wanjiku'
 }
+
+languages = ['kiswahili','english']
 /**
  * ----------------------
  * number types examples
