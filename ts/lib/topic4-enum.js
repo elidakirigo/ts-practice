@@ -2,6 +2,7 @@
 /**
  * also use
  * tsc topic4-enum --preserveConstEnums
+ * npm i core-js --save-dev
  */
 var Design;
 (function (Design) {

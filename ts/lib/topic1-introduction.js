@@ -24,6 +24,8 @@
  * checking for a config file location : tsc -p
  *
  * ceating a typescript file : touch [file name.ts] note : without the extention it does not have any
+ * creating a lib
+ * tsc --target es5 --lib dom,es6
  * ----------------------
  * the END
  * ----------------------

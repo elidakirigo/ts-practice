@@ -1,6 +1,7 @@
 /**
  * also use
  * tsc topic4-enum --preserveConstEnums
+ * npm i core-js --save-dev
  */
 declare enum Design {
     pretty = 0,

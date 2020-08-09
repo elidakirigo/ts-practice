@@ -1,7 +1,7 @@
 /**
  * also use 
  * tsc topic4-enum --preserveConstEnums
- * npm i core=js --save-dev
+ * npm i core-js --save-dev
  */
 enum Design { pretty, cute, plain, classy }
 

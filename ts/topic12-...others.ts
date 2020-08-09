@@ -1,5 +1,5 @@
 function unique(arg1: number, arg2: number, ...otherVariables: any) {
-    // console.log(...otherVariables);
+    console.log(otherVariables);
 
 }
 
@@ -10,3 +10,6 @@ for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
 }
 console.log(index)
+let myarray = ['kerry', 'lobs'];
+let mb = ['jim', ...myarray];
+console.log(mb);
