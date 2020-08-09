@@ -1,3 +1,8 @@
+"use strict";
+/**
+ * also use
+ * tsc topic4-enum --preserveConstEnums
+ */
 var Design;
 (function (Design) {
     Design[Design["pretty"] = 0] = "pretty";
@@ -7,8 +12,7 @@ var Design;
 })(Design || (Design = {}));
 var myChoice = Design.classy;
 var mysize = {
-    mysize: 10,
-    sizeNo: 23
+    mysize: 10, sizeNo: 23
 };
 var Colors;
 (function (Colors) {
@@ -25,7 +29,6 @@ var AnimalFlags;
     AnimalFlags[AnimalFlags["HasClaws"] = 1] = "HasClaws";
     AnimalFlags[AnimalFlags["CanFly"] = 2] = "CanFly";
 })(AnimalFlags || (AnimalFlags = {}));
-
 function printAnimalAbilities(animal) {
     var animalFlags = animal.flags;
     if (animalFlags & AnimalFlags.HasClaws) {
@@ -48,3 +51,4 @@ animal.flags &= ~AnimalFlags.HasClaws;
 printAnimalAbilities(animal); // nothing
 animal.flags |= AnimalFlags.HasClaws | AnimalFlags.CanFly;
 printAnimalAbilities(animal);
+//# sourceMappingURL=topic4-enum.js.map
