@@ -3,8 +3,14 @@
  * string types examples note :ES6 can be used in typescript
  * ----------------------------------------------------------
  */
-let myName: string | number | boolean = "elida";
+let myName: string | string[] | boolean = "elida";
 
+let myNames: { first: string; second: string }
+
+myNames = {
+    first: 'elida',
+    second: 'wanjiku'
+}
 /**
  * ----------------------
  * number types examples

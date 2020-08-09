@@ -10,6 +10,7 @@ export interface Starks {
     figure: boolean;
     contactDetails?: number; //the question mark entails its not a must for it to be filled.
     initials(description: string): void;
+    undefined(): void;
 }
 
 let myDetails: Starks = {
@@ -18,6 +19,9 @@ let myDetails: Starks = {
     figure: true,
     initials(described) {
         alert(described);
+    },
+    undefined(){
+       return reverse;
     }
 }
 
